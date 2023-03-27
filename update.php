@@ -32,6 +32,7 @@ if(isset($_POST["submit"])){
     }
 
 }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -50,7 +51,8 @@ if(isset($_POST["submit"])){
    <form method="POST"  placeholder="name of Book" class="form-control" enctype="multipart/form-data">
          <input type="text" placeholder="title of Book"  class="form-control" name="title" value="<?=$row["title"];?>">  <br>
          <input type="number" placeholder="type of Book" class="form-control" name="type" value="<?=$row["type"];?>"> <br>
-         <input type="number" placeholder="ISBN of Book" class="form-control" name="ISBN" value="<?=$row["ISBN"];?>"><br>
+         <input type="number" placeholder="ISBN of Book" class="form-control" name="ISBN" value="<?=$row["ISBN"]
+         ;?>"><br>
          <input type="file" placeholder="Image of Book" class="form-control" name="image" value="<?=$row["image"];?>"><br>
          <input type="text" placeholder="discription of Book" class="form-control" name="short_description" value="<?=$row["short_description"];?>"><br>
          <input type="text" placeholder="Publischer name of Book" class="form-control" name="publischer_name" 
